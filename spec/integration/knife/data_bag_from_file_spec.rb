@@ -33,10 +33,10 @@ describe "knife data bag from file", :workstation do
 
     when_the_repository "has some data bag items" do
       before do
-        file "data_bags/foo/bar.json", { "id" => "bar", "foo" => "bar "}
-        file "data_bags/foo/bzr.json", { "id" => "bzr", "foo" => "bar "}
-        file "data_bags/foo/cat.json", { "id" => "cat", "foo" => "bar "}
-        file "data_bags/foo/dog.json", { "id" => "dog", "foo" => "bar "}
+        file "data_bags/foo/bar.json", { "id" => "bar", "foo" => "bar " }
+        file "data_bags/foo/bzr.json", { "id" => "bzr", "foo" => "bar " }
+        file "data_bags/foo/cat.json", { "id" => "cat", "foo" => "bar " }
+        file "data_bags/foo/dog.json", { "id" => "dog", "foo" => "bar " }
         file "data_bags/foo/encrypted.json", <<EOM
 {
   "id": "encrypted",
