@@ -28,7 +28,7 @@ describe "knife data bag show", :workstation do
     before do
       data_bag "x", {}
       data_bag "canteloupe", {}
-      data_bag "rocket", { "falcon9" => {heavy: "true"}, "atlas" => {}, "ariane" => {} }
+      data_bag "rocket", { "falcon9" => { heavy: "true" }, "atlas" => {}, "ariane" => {} }
     end
 
     it "with an empty data bag" do
